@@ -1,88 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="One 1024x1024 infographic summing up the world news of 19 November 2026: GTA VI launch, Kerch Bridge, Shenzhen trilateral, EU Ukraine loan, Voyager 1, Anthropic IPO.">
+<meta property="og:title" content="19 November 2026 — World News in One Image">
+<meta property="og:description" content="Six stories and an in-brief strip, rendered as a single square infographic.">
+<meta property="og:image" content="assets/entry.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<title>19 November 2026 — World News in One Image</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { width: 1024px; height: 1024px; overflow: hidden; background: #f4f1ea; font-family: 'DejaVu Sans', Arial, sans-serif; color: #111; }
-  .page { width: 1024px; height: 1024px; padding: 20px 26px 16px; display: flex; flex-direction: column; }
-  /* ---------- masthead ---------- */
-  header { background: #0b1f3a; color: #fff; border-radius: 10px; padding: 14px 26px 12px; }
-  .kicker { font-size: 16px; letter-spacing: 5px; color: #f2b705; font-weight: bold; }
-  h1 { font-family: 'DejaVu Serif', Georgia, serif; font-size: 54px; line-height: 1.02; letter-spacing: 1px; margin-top: 3px; }
-  .dateline { display: flex; justify-content: space-between; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,.35); font-size: 18px; }
-  .dateline b { color: #f2b705; }
-  /* ---------- grid ---------- */
-  .grid { flex: 1; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 12px; margin-top: 12px; min-height: 0; }
-  .card { background: #fff; border-radius: 10px; padding: 13px 17px 10px; border-top: 7px solid #999; box-shadow: 0 2px 6px rgba(0,0,0,.10); display: flex; flex-direction: column; overflow: hidden; }
-  .tag { font-size: 13px; font-weight: bold; letter-spacing: 2.5px; }
-  .card h2 { font-family: 'DejaVu Serif', Georgia, serif; font-size: 24px; line-height: 1.13; margin-top: 6px; }
-  .card p { font-size: 16.5px; line-height: 1.35; margin-top: 7px; color: #333; }
-  .stat { margin-top: auto; padding-top: 6px; font-size: 15px; font-weight: bold; color: #0b1f3a; }
-  .c1 { border-top-color: #c0392b; } .c1 .tag { color: #c0392b; }
-  .c2 { border-top-color: #1f618d; } .c2 .tag { color: #1f618d; }
-  .c3 { border-top-color: #7d3c98; } .c3 .tag { color: #7d3c98; }
-  .c4 { border-top-color: #148f77; } .c4 .tag { color: #148f77; }
-  .c5 { border-top-color: #d35400; } .c5 .tag { color: #d35400; }
-  .c6 { border-top-color: #5d6d7e; } .c6 .tag { color: #5d6d7e; }
-  /* ---------- footer ---------- */
-  footer { margin-top: 12px; background: #0b1f3a; color: #fff; border-radius: 10px; padding: 11px 20px 10px; }
-  footer .inbrief { font-size: 15.5px; line-height: 1.42; }
-  footer .inbrief b { color: #f2b705; letter-spacing: 2px; }
-  footer .src { margin-top: 6px; font-size: 12.5px; color: #b9c4d4; }
+  body { margin: 0; background: #0b0e14; color: #e8ecf1; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 900px; margin: 0 auto; padding: 32px 20px 48px; }
+  h1 { font-size: 28px; margin: 0 0 6px; }
+  .date { color: #9aa5b1; margin: 0 0 24px; }
+  figure { margin: 0 0 28px; }
+  img { width: 100%; max-width: 900px; height: auto; display: block; border-radius: 12px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45); }
+  figcaption { color: #9aa5b1; font-size: 14px; margin-top: 10px; }
+  h2 { font-size: 20px; margin: 28px 0 12px; }
+  ol { margin: 0; padding-left: 22px; line-height: 1.6; }
+  li { margin-bottom: 12px; }
+  li strong { display: block; }
+  li span { color: #c3ccd6; }
+  .brief { background: #141a24; border: 1px solid #232c3b; border-radius: 10px; padding: 14px 18px; margin-top: 24px; font-size: 14px; line-height: 1.6; color: #c3ccd6; }
+  .brief strong { color: #e8ecf1; }
+  footer { margin-top: 36px; color: #9aa5b1; font-size: 14px; }
 </style>
 </head>
 <body>
-<div class="page">
-  <header>
-    <div class="kicker">THE WORLD TODAY</div>
-    <h1>WORLD NEWS</h1>
-    <div class="dateline"><span><b>THURSDAY, 19 NOVEMBER 2026</b></span><span>The day in six stories</span></div>
-  </header>
+<main>
+  <h1>19 November 2026 — World News in One Image</h1>
+  <p class="date">A single 1024&times;1024 infographic summing up the day's world news.</p>
 
-  <div class="grid">
-    <div class="card c1">
-      <div class="tag">GAMING</div>
-      <h2>GTA VI launches worldwide, Vice City returns</h2>
-      <p>After 13 years, Rockstar's epic goes live at midnight local time on PS5 and Xbox Series X|S. New Zealand played first; Take-Two shares rose 8%.</p>
-      <div class="stat">13 years since GTA V &middot; 8 Game Awards nods</div>
-    </div>
-    <div class="card c2">
-      <div class="tag">SUMMIT</div>
-      <h2>Trump, Xi and Putin meet in Shenzhen</h2>
-      <p>The first-ever trilateral summit of the three leaders is held at APEC, at the Kylin Villa. Nuclear arms top the agenda &mdash; New START expired in February.</p>
-      <div class="stat">No agreement expected</div>
-    </div>
-    <div class="card c3">
-      <div class="tag">UKRAINE</div>
-      <h2>Kerch Bridge hit for a third time this week</h2>
-      <p>Ukraine struck the bridge to annexed Crimea again overnight. Its road arch has collapsed into the strait and traffic is halted once more.</p>
-      <div class="stat">Road arch collapsed &middot; traffic halted</div>
-    </div>
-    <div class="card c4">
-      <div class="tag">MARKETS</div>
-      <h2>Anthropic debuts on Nasdaq as ANT</h2>
-      <p>The maker of Claude starts trading today in a roughly $64bn offering that values the AI company at about $1.4 trillion.</p>
-      <div class="stat">~$64bn raise &middot; ~$1.4tn valuation</div>
-    </div>
-    <div class="card c5">
-      <div class="tag">EUROPE</div>
-      <h2>EU proposes &euro;45bn loan for Ukraine</h2>
-      <p>Brussels would lend &euro;45bn for 2027 &mdash; &euro;25bn for arms, &euro;20bn for the budget &mdash; repayable only if Russia pays reparations for the war.</p>
-      <div class="stat">&euro;45bn &middot; needs all 27 members</div>
-    </div>
-    <div class="card c6">
-      <div class="tag">SPACE</div>
-      <h2>Voyager 1 reaches one light-day from Earth</h2>
-      <p>After nearly 50 years, the probe is 16.1 billion miles out &mdash; the first human-made object to get there. A radio signal now takes a full day.</p>
-      <div class="stat">16.1bn miles &middot; 24 hours for a signal</div>
-    </div>
-  </div>
+  <figure>
+    <img src="assets/entry.png" alt="Infographic: world news of 19 November 2026" width="1024" height="1024">
+    <figcaption>The entry image: six stories plus an in-brief strip, rendered as one square infographic.</figcaption>
+  </figure>
+
+  <h2>The six stories</h2>
+  <ol>
+    <li>
+      <strong>GTA VI is out</strong>
+      <span>Rockstar's Grand Theft Auto VI launches worldwide on 19 November after a 13-year wait, scoring 99/100 on Metacritic from 147 reviews; fans celebrate in Miami and Dublin.</span>
+    </li>
+    <li>
+      <strong>Kerch Bridge hit for the third time in a week</strong>
+      <span>Ukraine strikes the bridge linking annexed Crimea to Russia again on 19 November; a 227-metre section of roadway collapsed in the earlier strikes and traffic is halted.</span>
+    </li>
+    <li>
+      <strong>Trump, Xi and Putin meet in Shenzhen</strong>
+      <span>The leaders of the United States, China and Russia hold their first three-way summit on the sidelines of the APEC forum, with Ukraine and trade on the agenda.</span>
+    </li>
+    <li>
+      <strong>EU proposes a &euro;45bn loan for Ukraine</strong>
+      <span>Europe puts forward a &euro;45 billion loan to keep Ukraine funded as the three leaders meet in Shenzhen.</span>
+    </li>
+    <li>
+      <strong>Voyager 1 reaches one light-day from Earth</strong>
+      <span>NASA's probe, launched in 1977, becomes the first human-made object to travel a full light-day from Earth, still sending data from interstellar space.</span>
+    </li>
+    <li>
+      <strong>Anthropic's record $81.3bn IPO</strong>
+      <span>The Claude maker prices its IPO at $83 a share — the largest stock-market debut on record — and starts trading on the Nasdaq on 19 November under the ticker ANT.</span>
+    </li>
+  </ol>
 
   <footer>
-    <div class="inbrief"><b>IN BRIEF &nbsp;</b> Gulf war spreads: Iran hits U.S. bases in Kuwait &amp; Bahrain again, tanker struck near Oman &nbsp;&bull;&nbsp; Democrats nominate Hakeem Jeffries as first Black House speaker &nbsp;&bull;&nbsp; World court to rule on Myanmar genocide case &nbsp;&bull;&nbsp; COP31 climate talks enter final stretch</div>
-    <div class="src">Sources: Reuters, AP, BBC, Al Jazeera, Korea JoongAng Daily, NASA, The Motley Fool &mdash; reported 19 November 2026</div>
+    Built for the make.fun news-image-20261119 competition. The image is produced
+    deterministically: <code>python3 main.py</code> copies <code>assets/entry.png</code>
+    to <code>/output/entry.png</code> and verifies the copy byte-for-byte.
   </footer>
-</div>
+</main>
 </body>
 </html>

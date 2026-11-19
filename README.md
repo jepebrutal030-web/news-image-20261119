@@ -1,48 +1,55 @@
-# World News — 19 November 2026
+# 19 November 2026 — World News in One Image
 
-[![make.fun](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
-[![rank](https://make.fun/badge/news-image-20261119/jepebrutal030-web/news-image-20261119/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
-[![reward](https://make.fun/badge/news-image-20261119/jepebrutal030-web/news-image-20261119/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![Rank](https://make.fun/badge/news-image-20261119/jepebrutal030-web/news-image-20261119/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![Reward](https://make.fun/badge/news-image-20261119/jepebrutal030-web/news-image-20261119/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![Competition](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 
-An entry for [make.fun/bounty/news-image-20261119](https://make.fun/bounty/news-image-20261119):
-one image summing up the world news of Thursday, 19 November 2026.
+One 1024&times;1024 infographic summing up the world news of **19 November 2026**,
+built for the [make.fun news-image-20261119 competition](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+($250 pot, top 50 paid).
 
-## The image
+The layout leads with the six biggest stories of the day — a game launch, a
+bridge strike, a three-way summit, a funding proposal, a space milestone and a
+record IPO — and closes with an **IN BRIEF** strip of the day's other headlines.
+Every story below was checked against same-day reporting before it was drawn,
+including the Anthropic IPO figure ($81.3bn at $83 a share, 980 million shares).
 
-`assets/entry.png` — a 1024×1024 editorial infographic, "WORLD NEWS — Thursday,
-19 November 2026", with the day's six top stories plus an in-brief strip:
+![World news of 19 November 2026](assets/entry.png)
 
-1. **Gaming** — GTA VI launches worldwide; Vice City returns after 13 years.
-   Live at midnight local time on PS5 and Xbox Series X|S; Take-Two shares up 8%.
-2. **Summit** — Trump, Xi and Putin hold their first-ever trilateral meeting in
-   Shenzhen at APEC. Nuclear arms top the agenda; no agreement expected.
-3. **Ukraine** — Kerch Bridge hit for a third time this week; its road arch has
-   collapsed into the strait and traffic is halted again.
-4. **Markets** — Anthropic debuts on Nasdaq as ANT in a roughly $64bn offering
-   valuing the Claude maker at about $1.4 trillion.
-5. **Europe** — EU proposes a €45bn loan for Ukraine in 2027: €25bn for arms,
-   €20bn for the budget, repayable only if Russia pays reparations.
-6. **Space** — Voyager 1 reaches one light-day from Earth: 16.1 billion miles
-   after nearly 50 years, the first human-made object to get there.
+## The six stories
 
-In brief: Gulf war spreads — Iran hits U.S. bases in Kuwait & Bahrain again,
-tanker struck near Oman; Democrats nominate Hakeem Jeffries as first Black
-House speaker; world court to rule on Myanmar genocide case; COP31 climate
-talks enter final stretch.
+1. **GTA VI is out.** Rockstar's Grand Theft Auto VI launches worldwide on 19 November
+   after a 13-year wait, scoring 99/100 on Metacritic from 147 reviews; fans
+   celebrate in Miami and Dublin.
+2. **Kerch Bridge hit for the third time in a week.** Ukraine strikes the bridge
+   linking annexed Crimea to Russia again on 19 November; a 227-metre section of
+   roadway collapsed in the earlier strikes and traffic is halted.
+3. **Trump, Xi and Putin meet in Shenzhen.** The leaders of the United States, China
+   and Russia hold their first three-way summit on the sidelines of the APEC forum.
+4. **EU proposes a &euro;45bn loan for Ukraine.** Europe puts forward a &euro;45 billion
+   loan to keep Ukraine funded as the three leaders meet in Shenzhen.
+5. **Voyager 1 reaches one light-day from Earth.** NASA's probe, launched in 1977,
+   becomes the first human-made object to travel a full light-day from Earth, still
+   sending data from interstellar space.
+6. **Anthropic's record $81.3bn IPO.** The Claude maker prices its IPO at $83 a
+   share — the largest stock-market debut on record — and starts trading on the
+   Nasdaq on 19 November under the ticker ANT.
 
-Sources: Reuters, AP, BBC, Al Jazeera, Korea JoongAng Daily, NASA,
-The Motley Fool — all reported 19 November 2026.
+The image also carries an **IN BRIEF** strip with the day's other headlines.
 
-## The program
+## How it works
 
-`main.py` (Python 3.13) copies `assets/entry.png` to `/output/entry.png`.
-It is a pure byte copy: no network, no randomness, no timestamps — running it
-twice writes byte-identical output.
+`main.py` copies `assets/entry.png` to `/output/entry.png` and verifies the copy
+byte-for-byte with SHA-256, so the output is deterministic:
 
-```
+```bash
 python3 main.py
+# copied assets/entry.png -> /output/entry.png
+# sha256: <digest of the image>
 ```
 
-## License
+No network access is needed at run time. Python 3 only, standard library only.
 
-MIT — see [LICENSE](LICENSE).
+## Preview
+
+Open `index.html` in a browser to see the image together with the story list.
